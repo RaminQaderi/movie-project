@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+    box-shadow: 0px 0px 3px 0px;
+ 
+}
+header img{
+    width: 70px;
+}
+header .menuHeder{
+    display: flex;
+    gap: 20px;
+    margin: 0px auto;
+}
+header .menuHeder a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+}
+header .menuHeder a:hover {
+color: blue;
+
+}
+header .menuHeder i{
+    padding-left: 20px;
+    cursor: pointer;
+}
+ .menuMobile{
+    display: none !important;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+ .menuMobile:active{
+    color: gray;
+    transform: scale(1.1);
+} 
+
+.container .banner img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.banner{
+    position: relative;
+}
+.iconsMobile{
+    display: none;
+}
+.container .banner .title{
+    font-size: 20px;
+    bottom: 350px;
+    position: absolute;
+    left: 300px;
+    margin: 100px auto;
+}
+.container .banner .text{
+     font-size: 40px;
+    bottom: 300px;
+    position: absolute;
+    left: 250px;
+    margin: 50px auto;
+    color: rgb(38, 151, 76);
+}
+header .icons{
+  display: flex;
+  
+  gap: 10px;
+}
+header .icons i:hover{
+    color: gray;
+}
+.container .banner .button{
+    bottom: 260px;
+    position:absolute;
+     padding: 10px 30px;
+     border: none;
+     box-shadow: none;
+     left: 250px;
+     border-radius: 6px;
+     cursor: pointer;
+     background-color: #3949AB;
+     color: white;
+     font-weight: 600;
+}
+.container .boxMain{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+     margin-top: 20px;
+     flex-wrap: wrap;
+     
+}
+.box1{
+    position: relative;
+}
+.box2{
+    position: relative;
+}
+.box3{
+    position: relative;
+}
+.container .boxMain .shopImg{
+ width: 250px;
+ height: 250px;
+ object-fit: cover;
+}
+.boxMain .box1 .btnshop{
+position: absolute;
+right: 100px;
+top: 100px;
+padding: 10px 50px;
+left: 40px;
+background-color: rgba(255, 255, 255, 0.877);
+box-shadow: none;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+font-size: 18px;
+}
+.boxMain .box2 .btnshop{
+position: absolute;
+right: 100px;
+top: 100px;
+padding: 10px 50px;
+left: 25px;
+background-color: rgba(255, 255, 255, 0.877);
+box-shadow: none;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+font-size: 18px;
+}
+.boxMain .box3 .btnshop{
+position: absolute;
+right: 100px;
+top: 100px;
+padding: 10px 50px;
+left: 50px;
+background-color: rgba(255, 255, 255, 0.877);
+box-shadow: none;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+font-size: 18px;
+}
+.boxMain .btnshop:hover{
+    color: #a9a7a7;
+}
+ .newArrival .text-arrival{
+    font-size: 26px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+    width: 20px;
+    margin: 100px auto;
+    padding: 30px;
+   
+ }
+.container .newArrival .allBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+ .allBtn .btnMenu{
+    padding: 5px 30px;
+    box-shadow: none;
+    border: 1px solid rgba(128, 128, 128, 0.116);
+    background-color: rgba(255, 255, 255, 0.568);
+    cursor: pointer;
+}
+.allBtn .btnMenu:active{
+  background-color: red;
+  color: white;
+}
+.container .shopDetails{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.container .shopDetails .card1{
+    overflow: hidden;
+    background-color: white;
+    border-right: 1px solid rgba(128, 128, 128, 0.226);
+    width: 200px;
+    height: 365px;
+    cursor: pointer;
+}
+.shopDetails .card1 .titleCard{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.shopDetails .card1 .btnCard{
+    
+  width: 100%;
+  border: none;
+  padding: 5px 0px;
+  background-color: #0055ff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.shopDetails  .card1:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px 0px;
+    
+}
+.shopDetails img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:1200px) {
+    .menuMobile{
+       display: block !important;
+    }
+    .menuHeder{
+        display: none !important;
+    }
+   
+ .container .banner .text{
+     font-size: 25px;
+    bottom: 400px;
+    position: absolute;
+    left: 20px;
+    margin: 50px auto;
+    color: rgb(38, 151, 76);
+}
+.container .banner .title{
+    font-size: 20px;
+    bottom: 420px;
+    position: absolute;
+    left: 15px;
+    margin: 100px auto;
+}
+
+.iconsMobile{
+    margin-left: 40%;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+ .iconsMobile i:hover{
+    color: gray;
+}
+.container .banner .button{
+    bottom: 350px;
+    position:absolute;
+     padding: 10px 30px;
+     border: none;
+     box-shadow: none;
+     left: 50px;
+     border-radius: 6px;
+     cursor: pointer;
+     background-color: #3949AB;
+     color: white;
+     font-weight: 600;
+}
+.boxMain{
+  margin: 0px 20px;
+}
+.shopDetails{
+ 
+ gap: 20px !important;
+}
+}
